@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.techno.vimeosdk.view.VimeoPlayerView
+        android:id="@+id/vimeoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:autoPlay="false"
+        app:backgroundColor="#00FFFF"
+        app:loop="false"
+        app:muted="false"
+        app:quality="auto"
+        app:showFullscreenOption="false"
+        app:showMenuOption="false"
+        app:showOriginalControls="false"
+        app:showTitle="true"
+        app:topicColor="#FFFF00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/playerCurrentTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="@string/player_current_time" />
+
+        <SeekBar
+            android:id="@+id/volumeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play" />
+
+            <Button
+                android:id="@+id/pauseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Below are few videos which I have uploaded on Vimeo, I'm providing the video ID, which is getting passed in the webview" />
+
+        <Button
+            android:id="@+id/btnPlaySelenaVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="14dp"
+            android:text="Selena Gomez Interview" />
+
+        <Button
+            android:id="@+id/btnPlayLimitlessChess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="14dp"
+            android:text="Limitless Chess Promo" />
+
+        <Button
+            android:id="@+id/btnPlayDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="14dp"
+            android:text="Load Default Video" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

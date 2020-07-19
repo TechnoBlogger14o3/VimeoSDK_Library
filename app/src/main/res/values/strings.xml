@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VimeoSDK</string>
+    <string name="player_current_time">Current Time: %1$ss</string>
+    <string name="null_time">0:00</string>
+</resources>
